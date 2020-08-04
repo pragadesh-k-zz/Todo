@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="maincontainer">
+      <header>
+        <p id="heading" onclick="del()">TODO LIST</p>
+      </header>
+      <div class="buttonarea">
+        <p
+          style="
+            margin: 0px;
+            padding: 20px;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          TODAY
+        </p>
+        <div class="hovering button add fa fa-plus" onclick="input()"></div>
+      </div>
+      <div class="bodycontainer" id="bodycontainer">
+        <ul class="mylist" id="mylist"></ul>
+        <div id="empty">
+          <img id="emptyimg" src="emptylogo.png" alt=" Empty " />
+          <p style="margin: 0; color: rgb(159, 159, 160);">
+            Empty Task
+          </p>
+        </div>
+      </div>
+      <div class="input" id="inputdiv">
+        <input type="text" name="text" id="mytext" placeholder="Type here..." />
+        <div class="hovering button up fa fa-arrow-up" onclick="insert()"></div>
+      </div>
+      <footer>
+        <div id="about">
+          <p>Pragadesh K</p>
+          <img id="luimg" src="ullogo.png" alt=" LetsUpgrade " />
+          <p style="margin: 0;">Let's Upgrade Mini Project</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="backend.js"></script>
+</html>
