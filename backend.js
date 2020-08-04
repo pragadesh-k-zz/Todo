@@ -60,3 +60,15 @@ function insert() {
     create();
   }
 }
+
+var inp = document.getElementById("mytext");
+
+inp.addEventListener("keyup",function(e){
+
+  if (e.keyCode === 13){
+
+    document.getElementById("up").click()
+
+  }
+
+})
